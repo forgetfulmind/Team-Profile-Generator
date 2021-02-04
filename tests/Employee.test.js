@@ -27,7 +27,7 @@ describe("Employee class", ()=>{
     
     describe("getRole", ()=>{
         const employee = new Employee ("name", "id", "email")
-        expect(employee.getEmail()).toEqual("Employee")
+        expect(employee.getRole()).toEqual("Employee")
     })
 
 
