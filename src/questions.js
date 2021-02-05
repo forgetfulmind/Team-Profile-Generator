@@ -31,7 +31,7 @@ let managerQuestions =  [
     message: `Would you like to add another team member?`,
     name: "advanceChoice"
 }
-]
+];
 
 //Engineer Questions 
 let engineerQuestions =  [
@@ -53,8 +53,8 @@ let engineerQuestions =  [
     },
     {
         type: 'input',
-        message: `What is your Manager's gitHub username?`,
-        name: "GitHub"
+        message: `What is your Engineer's gitHub username?`,
+        name: "gitHub"
     },
     {
         type: 'list',
@@ -66,7 +66,7 @@ let engineerQuestions =  [
         message: `Would you like to add another team member?`,
         name: "advanceChoice"
     }
-    ]
+    ];
 
 //Intern Questions 
 let internQuestions =  [
@@ -101,12 +101,10 @@ let internQuestions =  [
         message: `Would you like to add another team member?`,
         name: "advanceChoice"
     }
-    ]
+    ];
 
 
 
 
 //export question sets
-module.exports = internQuestions
-module.exports = engineerQuestions
-module.exports = managerQuestions
+module.exports = {internQuestions, engineerQuestions, managerQuestions}
