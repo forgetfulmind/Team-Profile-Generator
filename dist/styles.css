@@ -1,0 +1,244 @@
+/* --- STYLES FOR ALL PAGES --- */
+body {
+  /* Typography */
+  font-family: 'Franklin Gothic Medium';
+  color: black;
+  /* Visual */
+  background-color:  black;
+}
+
+.profilePic{
+  width: 13vw;
+  height: 13vw;
+  border: #4aaaa5;
+  border-width: 6;
+  border-style: solid;
+}
+
+.screenCap{
+  width: 15vw;
+  height: 15vw;
+  border: #4aaaa5;
+  border-width: 3;
+  border-style: solid;
+  margin: 1vh;
+}
+
+.mail {
+  width: 2vw;
+}
+
+.container{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.wrap {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* add space for fixed nav */
+main {
+  margin: 4vh 0;
+}
+
+/* create styles for use for all white main boxes */
+.block {
+  background-color:  #d65afc80;
+  padding: 1vw;
+  padding-left: 1vw;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  margin-right: 10px;
+  font-size: 1.5vw;
+  font-family: Kanit;
+  border:  #4aaaa5;
+  border-width: 6;
+  border-style: solid;
+}
+
+.wrapper{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-items: center;
+}
+
+.block-header {
+  /* Typography */
+  color: Black;
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bold;
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+}
+
+.subhead {
+  font-size: 2vw;
+}
+
+.projectTitle {
+  font-size: 2vw;
+  color: #ffcefd;
+}
+
+.textContent {
+  font-size: 1vw;
+}
+
+.info {
+  margin-left: 1vw;
+}
+
+/* NAV START */
+#logo {
+  font-family: texturina;
+
+  /* Typography */
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+
+  /* Visual */
+  background: #d65afc00;
+}
+
+#logo:hover {
+  color: black;
+}
+
+/* override bootstrap navbar styling*/
+.navbar {
+  background:  #d65afc80;
+  border: none;
+  font-family: Texturina;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+/* media query for nav background color change */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    background: #ffcefd;
+  }
+  #logo {
+    background: #ffcefd;
+    font-size: 4vw;
+  }
+  .profilePic{
+    width: 30vw;
+    height: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block {
+    font-size: 4vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background: #ffcefd;
+    margin-bottom: 1vw;
+  }
+  .block-header {
+    font-size: 6vw;
+    margin-bottom: 1vh;
+    padding-left: 3vw;
+  }
+  .subhead {
+    font-size: 6vw;
+  }
+  .info {
+    margin-left: 0;
+  }
+  .projectTitle {
+    font-size: 6vw;
+    color: #fa9ff5;
+  }
+  .textContent {
+    font-size: 3vw;
+  }
+  .mail {
+    width: 6vw;
+  }
+  .screenCap{
+    width: 60vw;
+    height: 60vw;
+    margin-bottom: 1vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+/* END NAV */
+
+
+
+/* BEGIN FOOTER */
+.footer {
+  /* Positioning */
+  position: relative;
+  left: 0;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+
+  /* Visual */
+  background-color:  #d65afc80;
+  color: white;
+}
+
+.text-muted {
+  color: white;
+}
+.text-muted-footer {
+  /* Box-model */
+  margin-top: 15px;
+
+  /* Typography */
+  color: white;
+}
+
+.two-toned-footer-color {
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+  background-color: #4aaaa5;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    background-color: #ffcefd;
+    font-size: 3vw;
+  }
+}
+/* END FOOTER */
+/* --- END STYLES FOR ALL PAGES --- */
+
+/* --- PAGE-SPECIFIC STYLES --- */
+
+/* PORTFOLIO PAGE */
+.port-image {
+  margin: 20px auto;
+}
+
+figcaption {
+  text-align: center;
+  color: black;
+  font-family: Texturina;
+  font-size: 20px;
+}
+/* END PORTFOLIO PAGE */
