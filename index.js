@@ -106,11 +106,11 @@ for (let i=0; i<employees.length; i++){
 switch(employees[i].role){
     case "Manager":
         page.push(`
-        <div class="block">
-        <div class="row block-header">${employees[i].name}</div>
+        <div class="block col-md-3 col-sm-12">
+        <div class="block-header">${employees[i].name}</div>
         <hr />
-        <div class="row">
-          <div class="info col-md-9 col-sm-12 col-12">
+        <div class="row col-12">
+          <div class="info">
                 <div class="projectTitle"><strong>${employees[i].role}</strong></div>
                 <div>Employee id:</div><div class= "textContent">${employees[i].id}</div>
                 <div>eMail:</div><div class= "textContent">${employees[i].email}</div>
@@ -123,15 +123,15 @@ switch(employees[i].role){
         break;
     case "Engineer":
         page.push(`
-        <div class="block">
-        <div class="row block-header">${employees[i].name}</div>
+        <div class="block col-md-3 col-sm-12">
+        <div class="block-header">${employees[i].name}</div>
         <hr />
-        <div class="row">
-          <div class="info col-md-9 col-sm-12 col-12">
+        <div class="row col-12">
+        <div class="info">
                 <div class="projectTitle"><strong>${employees[i].role}</strong></div>
                 <div>Employee id:</div><div class= "textContent">${employees[i].id}</div>
                 <div>eMail:</div><div class= "textContent">${employees[i].email}</div>
-                <div>gitHub:</div><div class= "textContent"><a href="https://github.com/${employees[i].gitHub}">${employees[i].gitHub}</a></div>
+                <div>gitHub Profile:</div><div class= "textContent"><a href="https://github.com/${employees[i].gitHub}">${employees[i].gitHub}</a></div>
         </div>   
         </div>
         </div>
@@ -140,11 +140,11 @@ switch(employees[i].role){
         break;
     case "Intern":
         page.push(`
-        <div class="block">
-        <div class="row block-header">${employees[i].name}</div>
+        <div class="block col-md-3 col-sm-12">
+        <div class="block-header">${employees[i].name}</div>
         <hr />
-        <div class="row">
-          <div class="info col-md-9 col-sm-12 col-12">
+        <div class="row col-12">
+          <div class="info">
                 <div class="projectTitle"><strong>${employees[i].role}</strong></div>
                 <div>Employee id:</div><div class= "textContent">${employees[i].id}</div>
                 <div>eMail:</div><div class= "textContent">${employees[i].email}</div>
@@ -204,7 +204,7 @@ function combineModules(squid){
       <!-- End of navbar -->
 
       <!-- Start of container -->
-      <div>
+      <div class="row wrapper">
               ${makePage()}
      </div>
     </div>
