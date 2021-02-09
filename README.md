@@ -18,10 +18,12 @@
 
   [Questions](#questions)
 
+  [Walkthrough](#walkthrough)
+
 
   <h3><a name="install">Installation:</a></h3>
 
-  please run npm i and make sure inquirer and jest have been installed 
+  please run npm i and make sure inquirer and jest have been installed . run node index.js to start the application
 
   <h3><a name="usage">Usage:</a></h3>
 
@@ -48,4 +50,9 @@
   gitHub Link: <a href="https://github.com/forgetfulmind">https://github.com/forgetfulmind</a>
 
   eMail: forgetfulmind@gmail.com
+
+  <a name="walkthrough"><h3>Walkthrough:</h3></a> 
+
+  ![walkthrough](./TeamProfileGenerator_Walkthrough.gif)
+
 
